@@ -9,9 +9,9 @@ interface StatsSectionProps {
 
 export default function StatsSection({ stats }: StatsSectionProps) {
   return (
-    <section className="border-y border-slate-200 bg-slate-50">
-      <div className="mx-auto max-w-6xl px-5 py-16">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+    <section className="bg-slate-50">
+      <div className="mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -23,12 +23,12 @@ export default function StatsSection({ stats }: StatsSectionProps) {
                 ease: "easeOut",
                 delay: index * 0.1,
               }}
-              className="text-center"
+              className="rounded-3xl bg-white/90 p-6 text-center shadow-sm ring-1 ring-slate-200/40"
             >
-              <span className="text-4xl font-bold tracking-tight text-blue-600">
+              <span className="text-4xl font-semibold tracking-tight text-slate-900">
                 {stat.value}
               </span>
-              <p className="mt-2 text-sm font-medium text-slate-500">
+              <p className="mt-3 text-sm font-medium text-slate-500">
                 {stat.label}
               </p>
             </motion.div>

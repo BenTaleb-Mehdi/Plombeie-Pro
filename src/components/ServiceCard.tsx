@@ -27,23 +27,25 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="group border border-slate-200 bg-white p-8 hover:border-blue-600 transition-colors duration-300"
+      className="group rounded-3xl bg-white/90 p-6 shadow-sm ring-1 ring-slate-200/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
     >
-      <Icon className="h-8 w-8 text-blue-600" />
-      <h3 className="mt-6 text-lg font-bold text-slate-900">
+      <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 shadow-sm shadow-blue-100/70">
+        <Icon className="h-6 w-6" />
+      </div>
+      <h3 className="mt-5 text-lg font-semibold tracking-tight text-slate-950">
         {service.title}
       </h3>
-      <p className="mt-3 text-sm leading-relaxed text-slate-500">
+      <p className="mt-3 text-sm leading-7 text-slate-600">
         {service.description}
       </p>
       <a
         href={`${company.whatsapp}?text=${encodeURIComponent(service.whatsappMessage)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors duration-200"
+        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 hover:text-slate-950"
       >
         Demander un devis
-        <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
       </a>
     </motion.div>
   );

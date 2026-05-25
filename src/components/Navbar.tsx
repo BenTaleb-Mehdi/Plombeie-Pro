@@ -13,7 +13,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
@@ -23,19 +23,19 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 shadow-sm backdrop-blur border-b border-slate-200"
-          : "bg-white/80"
+          ? "border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur"
+          : "bg-white/90"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link
           href="/"
-          className="text-xl font-bold tracking-tight text-slate-900"
+          className="text-lg font-semibold tracking-tight text-slate-900"
         >
           {company.name}
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-7">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -47,19 +47,21 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a
-          href={company.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center gap-2 rounded-full border border-blue-600 bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-600/10 hover:bg-blue-700 hover:text-white transition-colors duration-200"
-        >
-          <Phone className="h-4 w-4" />
-          {company.phone}
-        </a>
+        <div className="hidden items-center gap-3 md:flex">
+          <a
+            href={company.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-slate-800/10 hover:bg-slate-800 transition-colors duration-200"
+          >
+            <Phone className="h-4 w-4" />
+            {company.phone}
+          </a>
+        </div>
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm shadow-slate-200"
+          className="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm"
           aria-label="Menu"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -68,18 +70,18 @@ export default function Navbar() {
 
       {open && (
         <motion.div
-          initial={{ opacity: 0, y: -8 }}
+          initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="border-t border-slate-200 bg-white md:hidden"
+          className="border-t border-slate-200 bg-white/95 backdrop-blur-md md:hidden"
         >
-          <nav className="flex flex-col px-5 py-4 gap-3">
+          <nav className="flex flex-col gap-3 px-5 py-5">
             {navigation.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="py-2 text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-blue-600"
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition-colors duration-200 hover:bg-slate-100 hover:text-slate-900"
               >
                 {item.label}
               </Link>
@@ -88,7 +90,7 @@ export default function Navbar() {
               href={company.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full border border-blue-600 bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition-colors duration-200"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-sm"
             >
               <Phone className="h-4 w-4" />
               {company.phone}

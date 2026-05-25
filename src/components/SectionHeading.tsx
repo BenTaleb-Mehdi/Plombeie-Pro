@@ -21,16 +21,14 @@ export default function SectionHeading({
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="max-w-2xl"
     >
-      <span className="text-xs font-semibold tracking-[0.2em] uppercase text-blue-600">
+      <span className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-slate-600">
         {label}
       </span>
-      <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
         {title}
       </h2>
       {description && (
-        <p className="mt-4 text-base leading-relaxed text-slate-500">
-          {description}
-        </p>
+        <p className="mt-4 text-base leading-8 text-slate-600">{description}</p>
       )}
     </motion.div>
   );

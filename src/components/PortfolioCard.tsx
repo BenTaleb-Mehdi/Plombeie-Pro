@@ -15,9 +15,9 @@ export default function PortfolioCard({ item }: PortfolioCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="group border border-slate-200 bg-white hover:border-blue-600 transition-colors duration-300"
+      className="group overflow-hidden rounded-3xl bg-white/90 shadow-sm ring-1 ring-slate-200/40 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
     >
-      <div className="aspect-[16/10] bg-slate-100 overflow-hidden relative"> {/* Added 'relative' */}
+      <div className="aspect-16/10 bg-slate-100 overflow-hidden relative">
         <Image
           src={item.image}
           alt={item.title}
