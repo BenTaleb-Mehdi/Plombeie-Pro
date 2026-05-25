@@ -1,0 +1,89 @@
+{
+  "company": {
+    "name": "Plomberie Pro",
+    "phone": "+212600000000",
+    "whatsapp": "https://wa.me/212600000000",
+    "email": "contact@plomberiepro.ma",
+    "address": "Tanger, Maroc"
+  },
+  "navigation": [
+    { "label": "Accueil", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Portfolio", "href": "/portfolio" },
+    { "label": "À Propos", "href": "/about" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "services": [
+    {
+      "id": "depannage-urgence",
+      "title": "Dépannage d'Urgence",
+      "description": "Intervention ultra-rapide sous 30 minutes pour fuites d'eau majeures, canalisations obstruées et pannes critiques de chauffe-eau.",
+      "icon": "Wrench",
+      "whatsappMessage": "Bonjour Plomberie Pro, j'ai besoin d'un dépannage d'urgence immédiat pour une fuite/panne."
+    },
+    {
+      "id": "installation-sanitaire",
+      "title": "Installation Sanitaire",
+      "description": "Pose et raccordement de robinetterie, WC suspendus, cabines de douche et systèmes de filtration d'eau modernes.",
+      "icon": "Droplet",
+      "whatsappMessage": "Bonjour Plomberie Pro, je souhaite planifier une installation sanitaire à mon domicile."
+    },
+    {
+      "id": "renovation-salle-de-bain",
+      "title": "Rénovation de Salle de Bain",
+      "description": "Transformation complète de votre espace : modification des réseaux de tuyauterie, pose de receveurs de douche et raccordements design.",
+      "icon": "Layers",
+      "whatsappMessage": "Bonjour Plomberie Pro, je vous contacte pour obtenir un devis de rénovation complète de salle de bain."
+    },
+    {
+      "id": "chauffage-eau",
+      "title": "Chauffe-Eau & Thermodynamique",
+      "description": "Installation, maintenance préventive et réparation de ballons d'eau chaude électriques et systèmes de chauffage thermodynamique.",
+      "icon": "Flame",
+      "whatsappMessage": "Bonjour Plomberie Pro, je souhaite un rendez-vous pour l'entretien ou le remplacement d'un chauffe-eau."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "projet-1",
+      "title": "Refonte de Réseau Cuivre en PER",
+      "category": "Rénovation",
+      "description": "Remplacement intégral d'une tuyauterie vétuste par un système PER haute performance à Tanger.",
+      "image": "/images/pro2.jpg"
+    },
+    {
+      "id": "projet-2",
+      "title": "Installation Sanitaire Minimaliste",
+      "category": "Neuf",
+
+      "description": "Intégration de robinetterie encastrée et WC suspendus dans une villa contemporaine.",
+      "image": "/images/pro1.jpg"
+    }
+  ],
+  "about": {
+    "title": "L'Artisanat de Précision",
+    "description": "Basé à Tanger, Plomberie Pro combine rigueur technique et réactivité pour offrir des installations durables et des dépannages sans surprise aux particuliers et professionnels.",
+    "stats": [
+      { "label": "Interventions Réussies", "value": "+1,200" },
+      { "label": "Garantie Décennale", "value": "100%" },
+      { "label": "Temps de Réponse", "value": "-30 min" }
+    ]
+  },
+  "blog": [
+    {
+      "id": "eviter-engorgement-canalisations",
+      "title": "3 Gestes pour Éviter l'Engorgement",
+      "excerpt": "Découvrez comment maintenir vos canalisations saines au quotidien et éviter les refoulements d'eau.",
+      "date": "24 Mai 2026",
+      "readTime": "3 min"
+    },
+    {
+      "id": "choisir-chauffe-eau-economique",
+      "title": "Quel Chauffe-Eau pour Économiser l'Énergie ?",
+      "excerpt": "Comparatif technique entre ballon classique et chauffe-eau instantané pour réduire votre facture d'électricité.",
+      "date": "18 Mai 2026",
+      "readTime": "5 min"
+    }
+  ]
+}
