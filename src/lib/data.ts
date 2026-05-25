@@ -25,6 +25,11 @@ export interface PortfolioItem {
   category: string;
   description: string;
   image: string;
+  duration?: string;
+  location?: string;
+  date?: string;
+  details?: string;
+  features?: string[];
 }
 
 export interface Stat {
@@ -55,7 +60,7 @@ export interface SiteData {
   blog: BlogPost[];
 }
 
-import data from "../../data/plomberie.json";
+import data from "../../data/plombier.json";
 
 export function getData(): SiteData {
   return data as SiteData;

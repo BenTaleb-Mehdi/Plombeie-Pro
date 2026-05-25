@@ -1,4 +1,4 @@
-import PortfolioCard from "@/components/PortfolioCard";
+import PortfolioGrid from "@/components/PortfolioGrid";
 import SectionHeading from "@/components/SectionHeading";
 import CtaSection from "@/components/CtaSection";
 import { getData } from "@/lib/data";
@@ -15,7 +15,10 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <>
-      <section className="border-b border-slate-200 bg-slate-50">
+      <section className="border-b border-slate-200/50 bg-slate-50 bg-grid-pattern relative overflow-hidden">
+        {/* Ambient premium background blurs */}
+        <div className="absolute top-[-30%] right-[-10%] w-[350px] h-[350px] bg-blue-500/5 rounded-full blur-[80px] -z-10 pointer-events-none" />
+        
         <div className="mx-auto max-w-6xl px-5 pt-32 pb-16 sm:pt-40 sm:pb-20">
           <SectionHeading
             label="Portfolio"
@@ -25,13 +28,9 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200">
+      <section className="border-b border-slate-200/50">
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <div className="grid gap-6 sm:grid-cols-2">
-            {portfolio.map((item) => (
-              <PortfolioCard key={item.id} item={item} />
-            ))}
-          </div>
+          <PortfolioGrid portfolio={portfolio} />
         </div>
       </section>
 
