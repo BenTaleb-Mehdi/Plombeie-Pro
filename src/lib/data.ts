@@ -25,6 +25,7 @@ export interface PortfolioItem {
   category: string;
   description: string;
   image: string;
+  images?: string[];
   duration?: string;
   location?: string;
   date?: string;
@@ -49,6 +50,8 @@ export interface BlogPost {
   excerpt: string;
   date: string;
   readTime: string;
+  content?: string[];
+  image?: string;
 }
 
 export interface SiteData {

@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
-import { motion } from "framer-motion";
-import { X, Calendar, MapPin, Clock, Tag, CheckCircle2 } from "lucide-react";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X, Calendar, MapPin, Clock, Tag, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import type { PortfolioItem } from "@/lib/data";
 import { getData } from "@/lib/data";
@@ -22,6 +22,9 @@ interface PortfolioModalProps {
 }
 
 export default function PortfolioModal({ item, onClose }: PortfolioModalProps) {
+  const images = item.images && item.images.length > 0 ? item.images : [item.image];
+  const [activeIdx, setActiveIdx] = useState(0);
+
   // Listen for Escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -35,6 +38,16 @@ export default function PortfolioModal({ item, onClose }: PortfolioModalProps) {
       document.body.classList.remove("no-scroll");
     };
   }, [onClose]);
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setActiveIdx((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setActiveIdx((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   const whatsappMessage = `Bonjour Plomberie Pro, je suis très intéressé par votre projet "${item.title}". J'aimerais solliciter une prestation similaire pour mon domicile. Pouvons-nous en discuter ?`;
 
@@ -56,124 +69,178 @@ export default function PortfolioModal({ item, onClose }: PortfolioModalProps) {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.94, y: 20 }}
         transition={{ type: "spring", damping: 26, stiffness: 220 }}
-        className="relative w-full max-w-4xl bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-slate-100 max-h-[90vh] flex flex-col z-10"
+        className="relative w-full max-w-3xl bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-slate-100 max-h-[90vh] flex flex-col z-10"
       >
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 border border-slate-200/80 text-slate-800 shadow-sm backdrop-blur transition-all hover:bg-white hover:scale-105 active:scale-95"
+          className="absolute top-4 right-4 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-slate-900/60 hover:bg-slate-900/85 text-white shadow-md backdrop-blur-sm transition-all hover:scale-105 active:scale-95 border-0 cursor-pointer"
           aria-label="Close details"
         >
           <X className="h-5 w-5" />
         </button>
 
         {/* Content Container (Scrollable) */}
-        <div className="overflow-y-auto flex-1">
-          <div className="grid gap-0 lg:grid-cols-[1.1fr_0.9fr]">
-            
-            {/* Left side: Large Project Image */}
-            <div className="relative aspect-16/11 lg:aspect-auto lg:h-full min-h-[300px] bg-slate-50 border-b lg:border-b-0 lg:border-r border-slate-100">
-              <Image
-                src={item.image}
-                alt={item.title}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="h-full w-full object-cover"
-                priority
-              />
+        <div className="overflow-y-auto flex-1 flex flex-col">
+          
+          {/* Top Section: Multi-Image Carousel */}
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9.5] min-h-[250px] bg-slate-50 border-b border-slate-100 overflow-hidden shrink-0">
+            {/* Image Slider */}
+            <div className="relative h-full w-full">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeIdx}
+                  initial={{ opacity: 0.4 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0.4 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative h-full w-full"
+                >
+                  <Image
+                    src={images[activeIdx]}
+                    alt={`${item.title} - Image ${activeIdx + 1}`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 80vw"
+                    className="h-full w-full object-cover"
+                    priority
+                  />
+                </motion.div>
+              </AnimatePresence>
               
-              {/* Overlay Gradient on Image */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-transparent pointer-events-none" />
+              {/* Subtle overlay gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/30 via-transparent to-transparent pointer-events-none" />
             </div>
 
-            {/* Right side: Enriched Project Metadata & Details */}
-            <div className="p-6 sm:p-8 flex flex-col justify-between">
-              <div>
-                {/* Category tag */}
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600 ring-1 ring-blue-600/10">
-                  <Tag className="h-3 w-3" />
-                  {item.category}
-                </span>
-
-                {/* Main title */}
-                <h2 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-950 sm:text-3xl leading-snug">
-                  {item.title}
-                </h2>
-
-                {/* Quick stats grid */}
-                <div className="mt-6 grid grid-cols-2 gap-3.5 border-y border-slate-100 py-5">
-                  <div className="flex items-center gap-2.5">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-50 text-slate-500">
-                      <MapPin className="h-4 w-4 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="text-[10px] uppercase font-semibold tracking-wider text-slate-400">Localisation</p>
-                      <p className="text-xs font-bold text-slate-800">{item.location || "Tanger"}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2.5">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-50 text-slate-500">
-                      <Clock className="h-4 w-4 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="text-[10px] uppercase font-semibold tracking-wider text-slate-400">Durée</p>
-                      <p className="text-xs font-bold text-slate-800">{item.duration || "N/A"}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2.5">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-50 text-slate-500">
-                      <Calendar className="h-4 w-4 text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="text-[10px] uppercase font-semibold tracking-wider text-slate-400">Date</p>
-                      <p className="text-xs font-bold text-slate-800">{item.date || "2026"}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Extended Details Narrative */}
-                <div className="mt-6">
-                  <h3 className="text-xs uppercase font-extrabold tracking-wider text-slate-400">Description du Projet</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                    {item.details || item.description}
-                  </p>
-                </div>
-
-                {/* Features Checklist */}
-                {item.features && item.features.length > 0 && (
-                  <div className="mt-6">
-                    <h3 className="text-xs uppercase font-extrabold tracking-wider text-slate-400">Travaux Réalisés</h3>
-                    <ul className="mt-3.5 space-y-2">
-                      {item.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2.5">
-                          <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0 mt-0.5" />
-                          <span className="text-xs text-slate-600 leading-normal">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-
-              {/* Call to action booking */}
-              <div className="mt-8 pt-6 border-t border-slate-100">
-                <a
-                  href={`${company.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex w-full items-center justify-center gap-2.5 rounded-2xl bg-slate-900 py-3.5 text-sm font-bold text-white shadow-lg transition-all duration-300 hover:bg-slate-800 hover:-translate-y-0.5 active:translate-y-0"
+            {/* Carousel Controls (only if more than 1 image) */}
+            {images.length > 1 && (
+              <>
+                {/* Prev Button */}
+                <button
+                  onClick={handlePrev}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-md backdrop-blur-sm transition-all hover:scale-105 active:scale-95 border border-slate-200/50 cursor-pointer"
+                  aria-label="Image précédente"
                 >
-                  <WhatsAppIcon className="h-4.5 w-4.5 text-green-400" />
-                  Demander un projet similaire
-                </a>
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+
+                {/* Next Button */}
+                <button
+                  onClick={handleNext}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-md backdrop-blur-sm transition-all hover:scale-105 active:scale-95 border border-slate-200/50 cursor-pointer"
+                  aria-label="Image suivante"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+
+                {/* Dot Indicators */}
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20">
+                  {images.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActiveIdx(idx);
+                      }}
+                      className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                        idx === activeIdx ? "w-6 bg-white" : "w-2 bg-white/50 hover:bg-white/80"
+                      }`}
+                      aria-label={`Aller à l'image ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+
+            {/* Floating Category Tag */}
+            <div className="absolute bottom-4 left-4 z-20">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-900/60 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-md border border-white/10">
+                <Tag className="h-3 w-3 text-blue-400" />
+                {item.category}
+              </span>
+            </div>
+          </div>
+
+          {/* Bottom Section: Full-Width Details Content */}
+          <div className="p-6 sm:p-10 flex-1 flex flex-col justify-between">
+            <div>
+              {/* Main title */}
+              <h2 className="text-2xl font-extrabold tracking-tight text-slate-950 sm:text-3xl leading-snug">
+                {item.title}
+              </h2>
+
+              {/* Quick stats row */}
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-y border-slate-100 py-5">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shrink-0">
+                    <MapPin className="h-4.5 w-4.5" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold tracking-wider text-slate-400">Localisation</p>
+                    <p className="text-sm font-extrabold text-slate-800">{item.location || "Tanger"}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shrink-0">
+                    <Clock className="h-4.5 w-4.5" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold tracking-wider text-slate-400">Durée du Chantier</p>
+                    <p className="text-sm font-extrabold text-slate-800">{item.duration || "N/A"}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shrink-0">
+                    <Calendar className="h-4.5 w-4.5" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold tracking-wider text-slate-400">Date de Réalisation</p>
+                    <p className="text-sm font-extrabold text-slate-800">{item.date || "2026"}</p>
+                  </div>
+                </div>
               </div>
 
+              {/* Extended Details Narrative */}
+              <div className="mt-8">
+                <h3 className="text-xs uppercase font-extrabold tracking-wider text-slate-400">Description du Projet</h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 whitespace-pre-line">
+                  {item.details || item.description}
+                </p>
+              </div>
+
+              {/* Features Checklist */}
+              {item.features && item.features.length > 0 && (
+                <div className="mt-8">
+                  <h3 className="text-xs uppercase font-extrabold tracking-wider text-slate-400 mb-4">Travaux Réalisés</h3>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {item.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-start gap-2.5 bg-slate-50/50 rounded-xl p-3 border border-slate-100/50">
+                        <CheckCircle2 className="h-4.5 w-4.5 text-emerald-500 shrink-0 mt-0.5" />
+                        <span className="text-xs text-slate-700 font-medium leading-normal">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Call to action booking */}
+            <div className="mt-10 pt-6 border-t border-slate-100 flex justify-center">
+              <a
+                href={`${company.whatsapp}?text=${encodeURIComponent(whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-slate-950 px-8 py-4 text-sm font-bold text-white shadow-lg transition-all duration-300 hover:bg-slate-900 hover:-translate-y-0.5 active:translate-y-0 w-full sm:w-auto"
+              >
+                <WhatsAppIcon className="h-4.5 w-4.5 text-green-400" />
+                Demander un projet similaire
+              </a>
             </div>
 
           </div>
+
         </div>
 
       </motion.div>

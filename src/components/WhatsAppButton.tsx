@@ -36,7 +36,7 @@ export default function WhatsAppButton() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.8 }}
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
-          className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-none"
+          className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 pointer-events-none"
         >
           {showScrollTop && (
             <motion.button

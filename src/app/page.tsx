@@ -48,9 +48,9 @@ export default function HomePage() {
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {portfolio.map((item) => (
-              <PortfolioCard 
-                key={item.id} 
-                item={item} 
+              <PortfolioCard
+                key={item.id}
+                item={item}
                 onClick={() => setSelectedProject(item)}
               />
             ))}
@@ -79,9 +79,9 @@ export default function HomePage() {
       {/* Project details Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <PortfolioModal 
-            item={selectedProject} 
-            onClose={() => setSelectedProject(null)} 
+          <PortfolioModal
+            item={selectedProject}
+            onClose={() => setSelectedProject(null)}
           />
         )}
       </AnimatePresence>

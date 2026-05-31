@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "Plomberie Pro",
+    "name": "Chakir Zarouk",
     "phone": "+212600000000",
     "whatsapp": "https://wa.me/212600000000",
     "email": "contact@plomberiepro.ma",
@@ -51,6 +51,11 @@
       "category": "Rénovation",
       "description": "Remplacement intégral d'une tuyauterie vétuste par un système PER haute performance à Tanger.",
       "image": "/images/pro2.jpg",
+      "images": [
+        "/images/pro2.jpg",
+        "/images/pro1.jpg",
+        "/images/plumber.png"
+      ],
       "duration": "2 jours",
       "location": "Tanger, Centre-ville",
       "date": "Mars 2026",
@@ -69,6 +74,11 @@
       "category": "Neuf",
       "description": "Intégration de robinetterie encastrée et WC suspendus dans une villa contemporaine.",
       "image": "/images/pro1.jpg",
+      "images": [
+        "/images/pro1.jpg",
+        "/images/pro2.jpg",
+        "/images/hero_plumbers.png"
+      ],
       "duration": "4 jours",
       "location": "Tanger, Malabata",
       "date": "Mai 2026",
@@ -97,14 +107,28 @@
       "title": "3 Gestes pour Éviter l'Engorgement",
       "excerpt": "Découvrez comment maintenir vos canalisations saines au quotidien et éviter les refoulements d'eau.",
       "date": "24 Mai 2026",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "image": "/images/pro2.jpg",
+      "content": [
+        "L'engorgement des canalisations est l'un des problèmes de plomberie les plus fréquents dans les foyers à Tanger. Souvent causé par l'accumulation progressive de résidus de savon, de cheveux et de graisses alimentaires, il peut pourtant être évité grâce à quelques gestes simples au quotidien.",
+        "Tout d'abord, l'installation d'une grille de protection ou d'un filtre d'évier est primordiale dans la douche et l'évier de la cuisine. Ce dispositif simple capte les cheveux et les gros débris avant qu'ils ne pénètrent dans le siphon, évitant ainsi la formation de bouchons tenaces.",
+        "Ensuite, prenez l'habitude de ne jamais verser de graisses ou d'huiles de cuisson usagées dans vos canalisations. En refroidissant, l'huile se fige et forme une couche solide sur les parois des tuyaux, ce qui retient d'autres débris. Versez-les plutôt dans un récipient fermé à jeter à la poubelle.",
+        "Enfin, un entretien régulier à l'eau bouillante et au bicarbonate de soude fait des miracles. Une fois par semaine, versez une tasse de bicarbonate de soude suivie d'un litre d'eau bouillante. Cette réaction naturelle dissout les graisses accumulées et neutralise les mauvaises odeurs de manière écologique, préservant la longévité de vos canalisations."
+      ]
     },
     {
       "id": "choisir-chauffe-eau-economique",
       "title": "Quel Chauffe-Eau pour Économiser l'Énergie ?",
       "excerpt": "Comparatif technique entre ballon classique et chauffe-eau instantané pour réduire votre facture d'électricité.",
       "date": "18 Mai 2026",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "image": "/images/pro1.jpg",
+      "content": [
+        "La production d'eau chaude sanitaire représente une part significative de la facture énergétique des ménages. À Tanger, avec la baisse des températures en hiver, le choix d'un système de chauffe-eau performant et économe est crucial pour maîtriser sa consommation d'électricité ou de gaz.",
+        "Le chauffe-eau électrique classique (ou cumulus) stocke l'eau et la maintient à température en continu. S'il offre un excellent confort d'utilisation avec un débit d'eau chaude immédiat et constant, il consomme de l'énergie en permanence pour maintenir l'eau chaude, même lorsque vous n'êtes pas chez vous. C'est ce qu'on appelle les pertes thermiques statiques.",
+        "À l'inverse, le chauffe-eau électrique instantané ne chauffe l'eau qu'à la demande, lorsqu'un robinet est ouvert. Sans réservoir, il élimine complètement les pertes d'énergie liées au stockage. Cependant, il nécessite une puissance électrique instantanée très élevée et peut montrer ses limites lors de l'utilisation simultanée de plusieurs points d'eau dans les grands foyers.",
+        "Pour les foyers soucieux de réaliser des économies maximales, le chauffe-eau thermodynamique ou le chauffe-eau solaire représentent les meilleures alternatives modernes. Le modèle thermodynamique utilise une mini pompe à chaleur pour capter les calories de l'air et chauffer l'eau, réduisant la consommation électrique jusqu'à 70%. Bien que l'investissement initial soit plus élevé, le retour sur investissement à Tanger est très rapide grâce au climat ensoleillé de notre région."
+      ]
     }
   ]
 }
