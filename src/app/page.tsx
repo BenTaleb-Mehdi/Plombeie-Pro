@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
 import Hero from "@/components/Hero";
 import IntroVideo from "@/components/IntroVideo";
 import ServiceCard from "@/components/ServiceCard";
@@ -10,14 +8,12 @@ import StatsSection from "@/components/StatsSection";
 import BlogCard from "@/components/BlogCard";
 import CtaSection from "@/components/CtaSection";
 import SectionHeading from "@/components/SectionHeading";
-import PortfolioModal from "@/components/PortfolioModal";
-import { getData, type PortfolioItem } from "@/lib/data";
+import { getData } from "@/lib/data";
 import { useTranslation } from "@/lib/i18n";
 
 const { services, portfolio, about, blog } = getData();
 
 export default function HomePage() {
-  const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(null);
   const { t } = useTranslation();
 
   return (
@@ -57,7 +53,7 @@ export default function HomePage() {
               <PortfolioCard
                 key={item.id}
                 item={item}
-                onClick={() => setSelectedProject(item)}
+                linkToPage={true}
               />
             ))}
           </div>
@@ -81,16 +77,6 @@ export default function HomePage() {
       </section>
 
       <CtaSection />
-
-      {/* ── Project Details Modal ────────────────────────── */}
-      <AnimatePresence>
-        {selectedProject && (
-          <PortfolioModal
-            item={selectedProject}
-            onClose={() => setSelectedProject(null)}
-          />
-        )}
-      </AnimatePresence>
     </>
   );
 }

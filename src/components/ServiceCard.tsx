@@ -14,7 +14,7 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const serviceKeyMap: Record<string, string> = {
-  "depannage-urgence": "service_depannage",
+  "plomberie-generale": "service_depannage",
   "debouchage-canalisations": "service_debouchage",
   "chauffe-eau": "service_chauffe-eau",
   "detection-fuites": "service_detection",

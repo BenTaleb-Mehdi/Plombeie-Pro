@@ -10,10 +10,10 @@ interface Message {
 }
 
 const SUGGESTIONS = [
-  "Dépannage d'urgence ?",
   "Devis rénovation salle de bain",
-  "Délai d'intervention ?",
-  "Tarifs chauffe-eau",
+  "Prix installation chauffe-eau",
+  "Débouchage canalisations",
+  "Détection de fuites",
 ];
 
 export default function Chatbot() {

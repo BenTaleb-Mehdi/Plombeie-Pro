@@ -8,16 +8,15 @@ Informations sur l'entreprise :
 - Nom : Plomberie Pro (Chakir Zarouk)
 - Localisation : Tanger, Maroc
 - Téléphone : +212 600 000 000
-- Services : Dépannage d'urgence (30 min), Installation sanitaire, Rénovation de salle de bain, Chauffe-eau & Thermodynamique
-- Disponibilité : 7j/7, 24h/24 pour les urgences
+- Services : Plomberie générale, Installation sanitaire, Rénovation de salle de bain, Chauffe-eau, Détection de fuites, Débouchage
+- Disponibilité : 7j/7
 
 Règles de comportement :
 1. Réponds toujours en français, sauf si le client écrit en arabe (réponds en darija/arabe).
 2. Sois professionnel, chaleureux et concis.
-3. Pour les urgences, oriente immédiatement vers le numéro de téléphone.
+3. Encourage à contacter via WhatsApp ou téléphone pour un devis gratuit.
 4. Ne cite pas de prix exacts sans inspection — propose plutôt un devis gratuit.
-5. Encourage à contacter via WhatsApp ou téléphone pour les cas urgents.
-6. Limite tes réponses à 3-4 phrases maximum pour rester lisible sur mobile.`;
+5. Limite tes réponses à 3-4 phrases maximum pour rester lisible sur mobile.`;
 
 export async function POST(req: NextRequest) {
   try {

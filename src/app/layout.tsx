@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Plomberie Pro",
   },
   description:
-    "Artisan plombier à Tanger : dépannage d'urgence 30 min, installation sanitaire, rénovation de salle de bain et chauffe-eau.",
+    "Artisan plombier à Tanger : installation sanitaire, rénovation de salle de bain, entretien de chauffe-eau et débouchage de canalisations.",
   metadataBase: new URL("https://plomberiepro.ma"),
 };
 

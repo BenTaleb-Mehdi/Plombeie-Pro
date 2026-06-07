@@ -20,7 +20,7 @@ const navKeyMap: Record<string, string> = {
   "/contact": "contact",
 };
 
-const darkBgPages = ["/services", "/portfolio", "/contact", "/blog"];
+const darkBgPrefixes = ["/services", "/portfolio", "/contact", "/blog"];
 
 // Custom Official WhatsApp SVG Icon
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -86,7 +86,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation();
   const pathname = usePathname();
-  const isDarkPage = darkBgPages.includes(pathname);
+  const isDarkPage = darkBgPrefixes.some((prefix) => pathname === prefix || pathname.startsWith(prefix + "/"));
   const navText = !scrolled && isDarkPage ? "text-white/85 hover:text-white" : "text-slate-600 hover:text-sky-600";
 
   useEffect(() => {
@@ -122,8 +122,8 @@ export default function Navbar() {
           >
             <LogoIcon />
             <div className="flex flex-col leading-none">
-              <span className={`text-base font-extrabold tracking-wider transition-colors duration-500 ${!scrolled && isDarkPage ? "text-white" : "text-slate-900"}`}>PLOMBERIE</span>
-              <span className="text-[10px] font-bold text-sky-600 tracking-[0.25em]">PRO</span>
+              <span className={`text-base font-extrabold tracking-wider transition-colors duration-500 ${!scrolled && isDarkPage ? "text-white" : "text-slate-900"}`}>CHAKIR ZAROUK</span>
+              <span className="text-[10px] font-bold text-sky-600 tracking-[0.25em]">PLOMBERIE</span>
             </div>
           </Link>
 

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PortfolioCard from "@/components/PortfolioCard";
-import PortfolioModal from "@/components/PortfolioModal";
 import type { PortfolioItem } from "@/lib/data";
 import { useTranslation } from "@/lib/i18n";
 
@@ -23,7 +22,6 @@ interface PortfolioGridProps {
 }
 
 export default function PortfolioGrid({ portfolio }: PortfolioGridProps) {
-  const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(null);
   const [activeCategory, setActiveCategory] = useState("Tous");
   const { t } = useTranslation();
 
@@ -72,21 +70,12 @@ export default function PortfolioGrid({ portfolio }: PortfolioGridProps) {
             >
               <PortfolioCard
                 item={item}
-                onClick={() => setSelectedProject(item)}
+                linkToPage={true}
               />
             </motion.div>
           ))}
         </AnimatePresence>
       </motion.div>
-
-      <AnimatePresence>
-        {selectedProject && (
-          <PortfolioModal
-            item={selectedProject}
-            onClose={() => setSelectedProject(null)}
-          />
-        )}
-      </AnimatePresence>
     </div>
   );
 }
