@@ -9,10 +9,10 @@
     "quote": "Free Quote"
   },
   "hero": {
-    "badge": "Emergency Plumber in Tanger",
+    "badge": "Expert Plumber in Tanger",
     "title": "Your Expert Plumber,",
-    "title2": "Available 24/7",
-    "subtitle": "Urgent intervention in 30 minutes. Installation, renovation and plumbing maintenance in Tanger and surroundings.",
+    "title2": "At Your Service",
+    "subtitle": "Installation, renovation and plumbing maintenance in Tanger and surroundings.",
     "cta_primary": "Get a Free Quote",
     "cta_secondary": "Call Now",
     "trust": "Trusted by 500+ clients"
@@ -26,20 +26,20 @@
   "services": {
     "label": "Services",
     "title": "Complete Expertise",
-    "description": "From emergency calls to full renovations, we handle all your plumbing needs."
+    "description": "From maintenance to full renovations, we handle all your plumbing needs."
   },
   "services_page": {
     "badge": "Craftsmanship & Excellence",
     "title": "Plumbing Services",
     "title2": "Premium Quality",
-    "subtitle": "Skilled craftsmen at your service for rapid emergency repairs or custom sanitary renovation projects in Tangier.",
+    "subtitle": "Skilled craftsmen at your service for custom sanitary renovation projects in Tangier.",
     "grid_label": "Our Services",
     "grid_title": "Professional solutions tailored to you",
     "process_label": "Our Methodology",
     "process_title": "How we work at your home",
     "process_desc": "A transparent and secure process for stress-free repairs.",
     "step1_title": "Contact Us",
-    "step1_desc": "Call us or send a WhatsApp. We qualify your request directly 24/7.",
+    "step1_desc": "Call us or send a WhatsApp. We qualify your request directly.",
     "step2_title": "Diagnosis & Quote",
     "step2_desc": "We come to analyze the situation and provide a precise, 100% free quote.",
     "step3_title": "Pro Intervention",
@@ -48,8 +48,8 @@
     "step4_desc": "We pressure-test the network and clean the premises. Your peace of mind is guaranteed.",
     "faq_label": "Frequently Asked Questions",
     "faq_title": "Need clarification?",
-    "faq1_q": "What are your response times for emergency repairs?",
-    "faq1_a": "We respond in less than 30 minutes in Tangier for all life-threatening emergencies.",
+    "faq1_q": "What are your response times?",
+    "faq1_a": "We generally respond within 24 to 48 business hours in Tangier. Contact us to schedule an appointment.",
     "faq2_q": "Is the quote paid or binding?",
     "faq2_a": "Absolutely not. All our quotes and site visits are free, transparent and non-binding.",
     "faq3_q": "What guarantees do you offer on your services?",
@@ -58,8 +58,8 @@
     "faq4_a": "Yes, Plomberie Pro supports condominium syndicates, shops, restaurants and hotels in Tangier."
   },
   "service_depannage": {
-    "title": "Emergency Repair",
-    "description": "Ultra-fast intervention within 30 minutes for major water leaks, clogged pipes, and water heater breakdowns."
+    "title": "General Plumbing",
+    "description": "Installation, repair and maintenance of all your sanitary equipment with certified quality materials."
   },
   "service_debouchage": {
     "title": "Drain Cleaning & Unclogging",
@@ -144,7 +144,7 @@
     "reading_time": "Reading time",
     "read_article": "Read article",
     "cta_title": "Need personalized advice?",
-    "cta_desc": "Our plumbing craftsmen are available to answer all your questions or intervene urgently.",
+    "cta_desc": "Our plumbing craftsmen are available to answer all your questions and advise you.",
     "cta_button": "Call Plomberie Pro",
     "related_title": "Also read",
     "badge_tag": "Pro Tips"
@@ -174,17 +174,17 @@
     ]
   },
   "cta": {
-    "title": "Need a Plumber Now?",
-    "subtitle": "We respond in 30 minutes, 7 days a week.",
+    "title": "Need a Professional Plumber?",
+    "subtitle": "Contact us for a free and personalized quote.",
     "button": "Contact Us"
   },
   "footer": {
     "rights": "All rights reserved.",
-    "description": "Professional plumber in Tanger – emergency plumbing, bathroom renovation, and water heater installation."
+    "description": "Professional plumber in Tanger – bathroom renovation, sanitary installation, and water heater services."
   },
   "contact": {
     "page_title": "Contact",
-    "page_description": "A question, a quote or an emergency? We're here to help.",
+    "page_description": "A question or a quote? We're here to help.",
     "phone_title": "Phone",
     "email_title": "Email",
     "address_title": "Address",

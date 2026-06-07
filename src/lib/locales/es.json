@@ -9,10 +9,10 @@
     "quote": "Presupuesto Gratis"
   },
   "hero": {
-    "badge": "Fontanero Urgente en Tánger",
+    "badge": "Fontanero Experto en Tánger",
     "title": "Tu Fontanero Experto,",
-    "title2": "Disponible 24/7",
-    "subtitle": "Intervención de emergencia en 30 minutos. Instalación, renovación y mantenimiento en Tánger y alrededores.",
+    "title2": "A Tu Servicio",
+    "subtitle": "Instalación, renovación y mantenimiento en Tánger y alrededores.",
     "cta_primary": "Presupuesto Gratuito",
     "cta_secondary": "Llamar Ahora",
     "trust": "Más de 500 clientes satisfechos"
@@ -26,20 +26,20 @@
   "services": {
     "label": "Servicios",
     "title": "Expertise completo",
-    "description": "Desde emergencias hasta renovaciones completas, cubrimos todas sus necesidades de fontanería."
+    "description": "Desde mantenimiento hasta renovaciones completas, cubrimos todas sus necesidades de fontanería."
   },
   "services_page": {
     "badge": "Artesanía & Excelencia",
     "title": "Servicios de Fontanería",
     "title2": "Alta Gama",
-    "subtitle": "Artistas cualificados a su servicio para reparaciones rápidas o proyectos de renovación sanitaria a medida en Tánger.",
+    "subtitle": "Artistas cualificados a su servicio para proyectos de renovación sanitaria a medida en Tánger.",
     "grid_label": "Nuestros Servicios",
     "grid_title": "Soluciones profesionales adaptadas",
     "process_label": "Nuestra Metodología",
     "process_title": "Cómo trabajamos en su hogar",
     "process_desc": "Un proceso transparente y seguro para reparaciones sin estrés.",
     "step1_title": "Contacto",
-    "step1_desc": "Llámenos o envíe un WhatsApp. Evaluamos su solicitud directamente 24/7.",
+    "step1_desc": "Llámenos o envíe un WhatsApp. Evaluamos su solicitud directamente.",
     "step2_title": "Diagnóstico & Presupuesto",
     "step2_desc": "Visitamos para analizar la situación y le damos un presupuesto preciso 100% gratuito.",
     "step3_title": "Intervención Profesional",
@@ -48,8 +48,8 @@
     "step4_desc": "Probamos la red a alta presión y limpiamos el lugar. Su tranquilidad está garantizada.",
     "faq_label": "Preguntas Frecuentes",
     "faq_title": "¿Necesita aclaración?",
-    "faq1_q": "¿Cuáles son sus tiempos de respuesta para una emergencia?",
-    "faq1_a": "Intervenimos en menos de 30 minutos en Tánger para todas las emergencias vitales.",
+    "faq1_q": "¿Cuáles son sus tiempos de respuesta?",
+    "faq1_a": "Generalmente respondemos en 24 a 48 horas hábiles en Tánger. Contáctenos para programar una cita.",
     "faq2_q": "¿El presupuesto es de pago o vinculante?",
     "faq2_a": "Absolutamente no. Todos nuestros presupuestos y visitas son gratuitos, transparentes y sin compromiso.",
     "faq3_q": "¿Qué garantías ofrecen en sus servicios?",
@@ -58,8 +58,8 @@
     "faq4_a": "Sí, Plomberie Pro apoya a comunidades de propietarios, comercios, restaurantes y hoteles en Tánger."
   },
   "service_depannage": {
-    "title": "Reparación de Emergencia",
-    "description": "Intervención ultrarrápida en 30 minutos para fugas de agua importantes, tuberías obstruidas y averías de calentadores."
+    "title": "Fontanería General",
+    "description": "Instalación, reparación y mantenimiento de todos sus equipos sanitarios con materiales de calidad certificados."
   },
   "service_debouchage": {
     "title": "Desatasco & Limpieza",
@@ -144,7 +144,7 @@
     "reading_time": "Tiempo de lectura",
     "read_article": "Leer artículo",
     "cta_title": "¿Necesita asesoramiento personalizado?",
-    "cta_desc": "Nuestros fontaneros están disponibles para responder a todas sus preguntas o intervenir de urgencia.",
+    "cta_desc": "Nuestros fontaneros están disponibles para responder a todas sus preguntas y asesorarle.",
     "cta_button": "Llamar a Plomberie Pro",
     "related_title": "Lea también",
     "badge_tag": "Consejos Pro"
@@ -174,17 +174,17 @@
     ]
   },
   "cta": {
-    "title": "¿Necesita un fontanero ahora?",
-    "subtitle": "Respondemos en 30 minutos, 7 días a la semana.",
+    "title": "¿Necesita un fontanero profesional?",
+    "subtitle": "Contáctenos para un presupuesto gratuito y personalizado.",
     "button": "Contáctenos"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
-    "description": "Fontanero profesional en Tánger – reparaciones urgentes, renovación de baños y calentadores de agua."
+    "description": "Fontanero profesional en Tánger – renovación de baños, instalación sanitaria y calentadores de agua."
   },
   "contact": {
     "page_title": "Contacto",
-    "page_description": "¿Una pregunta, un presupuesto o una emergencia? Estamos para ayudarle.",
+    "page_description": "¿Una pregunta o un presupuesto? Estamos para ayudarle.",
     "phone_title": "Teléfono",
     "email_title": "Email",
     "address_title": "Dirección",
