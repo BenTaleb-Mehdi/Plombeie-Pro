@@ -17,6 +17,7 @@ export interface Service {
   description: string;
   icon: string;
   whatsappMessage: string;
+  image?: string;
 }
 
 export interface PortfolioItem {
@@ -54,6 +55,38 @@ export interface BlogPost {
   image?: string;
 }
 
+export interface WhyChooseUs {
+  title: string;
+  description: string;
+  image: string;
+  bullets: string[];
+}
+
+export interface ProcessStep {
+  number: string;
+  title: string;
+  description: string;
+}
+
+export interface Process {
+  title: string;
+  steps: ProcessStep[];
+}
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  role: string;
+  text: string;
+  rating: number;
+}
+
+export interface Team {
+  title: string;
+  description: string;
+  image: string;
+}
+
 export interface SiteData {
   company: Company;
   navigation: NavItem[];
@@ -61,10 +94,15 @@ export interface SiteData {
   portfolio: PortfolioItem[];
   about: About;
   blog: BlogPost[];
+  whyChooseUs: WhyChooseUs;
+  process: Process;
+  testimonials: Testimonial[];
+  team: Team;
 }
 
 import data from "../../data/plombier.json";
 
 export function getData(): SiteData {
-  return data as SiteData;
+  return data as unknown as SiteData;
 }
+

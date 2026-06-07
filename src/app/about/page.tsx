@@ -5,16 +5,19 @@ import SectionHeading from "@/components/SectionHeading";
 import StatsSection from "@/components/StatsSection";
 import CtaSection from "@/components/CtaSection";
 import { getData } from "@/lib/data";
+import { useTranslation } from "@/lib/i18n";
 
 const { about } = getData();
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-5 pt-32 pb-16 sm:pt-40 sm:pb-20">
           <SectionHeading
-            label="À Propos"
+            label={t("nav.about")}
             title={about.title}
             description={about.description}
           />
@@ -33,28 +36,11 @@ export default function AboutPage() {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <h2 className="text-2xl font-bold text-slate-900">
-                Une expertise locale au service de votre confort
+                {about.title}
               </h2>
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-slate-500">
                 <p>
-                  Forts de plusieurs années d&apos;expérience dans le
-                  domaine de la plomberie, nous avons bâti notre
-                  réputation sur la qualité de nos installations et la
-                  rapidité de nos interventions.
-                </p>
-                <p>
-                  Chaque chantier est abordé avec la même rigueur :
-                  diagnostic précis, conseils transparents et execution
-                  soignée. Nous utilisons des matériaux certifiés et
-                  respectons les normes en vigueur pour garantir la
-                  durabilité de nos travaux.
-                </p>
-                <p>
-                  Que vous soyez un particulier souhaitant rénover
-                  votre salle de bain ou un professionnel confronté à
-                  une urgence, nous nous déplaçons dans toute la région
-                  de Tanger avec un engagement : celui de faire le
-                  travail proprement, dans les délais et au prix convenu.
+                  {about.description}
                 </p>
               </div>
             </motion.div>
@@ -67,16 +53,16 @@ export default function AboutPage() {
               className="border border-slate-200 bg-slate-50 p-8"
             >
               <h3 className="text-lg font-bold text-slate-900">
-                Nos engagements
+                {t("services_page.process_title")}
               </h3>
               <ul className="mt-6 space-y-4">
                 {[
-                  "Devis gratuit et sans engagement",
-                  "Intervention sous 30 minutes en urgence",
-                  "Garantie décennale sur tous nos travaux",
-                  "Matériaux de première qualité",
-                  "Propreté et respect des lieux",
-                  "Transparence totale sur les prix",
+                  t("hero.trust"),
+                  t("services_page.step1_title"),
+                  t("services_page.step2_title"),
+                  t("services_page.step3_title"),
+                  t("services_page.step4_title"),
+                  t("cta.subtitle"),
                 ].map((item) => (
                   <li
                     key={item}

@@ -1,0 +1,210 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Realizaciones",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "about": "Acerca de",
+    "quote": "Presupuesto Gratis"
+  },
+  "hero": {
+    "badge": "Fontanero Urgente en Tánger",
+    "title": "Tu Fontanero Experto,",
+    "title2": "Disponible 24/7",
+    "subtitle": "Intervención de emergencia en 30 minutos. Instalación, renovación y mantenimiento en Tánger y alrededores.",
+    "cta_primary": "Presupuesto Gratuito",
+    "cta_secondary": "Llamar Ahora",
+    "trust": "Más de 500 clientes satisfechos"
+  },
+  "video": {
+    "title": "Artesanía & Excelencia",
+    "subtitle": "Mira nuestro equipo en acción – precisión, rapidez y calidad garantizadas.",
+    "play": "Reproducir video",
+    "pause": "Pausar video"
+  },
+  "services": {
+    "label": "Servicios",
+    "title": "Expertise completo",
+    "description": "Desde emergencias hasta renovaciones completas, cubrimos todas sus necesidades de fontanería."
+  },
+  "services_page": {
+    "badge": "Artesanía & Excelencia",
+    "title": "Servicios de Fontanería",
+    "title2": "Alta Gama",
+    "subtitle": "Artistas cualificados a su servicio para reparaciones rápidas o proyectos de renovación sanitaria a medida en Tánger.",
+    "grid_label": "Nuestros Servicios",
+    "grid_title": "Soluciones profesionales adaptadas",
+    "process_label": "Nuestra Metodología",
+    "process_title": "Cómo trabajamos en su hogar",
+    "process_desc": "Un proceso transparente y seguro para reparaciones sin estrés.",
+    "step1_title": "Contacto",
+    "step1_desc": "Llámenos o envíe un WhatsApp. Evaluamos su solicitud directamente 24/7.",
+    "step2_title": "Diagnóstico & Presupuesto",
+    "step2_desc": "Visitamos para analizar la situación y le damos un presupuesto preciso 100% gratuito.",
+    "step3_title": "Intervención Profesional",
+    "step3_desc": "Nuestros fontaneros autorizados realizan el trabajo con rigor y limpieza.",
+    "step4_title": "Garantía & Seguimiento",
+    "step4_desc": "Probamos la red a alta presión y limpiamos el lugar. Su tranquilidad está garantizada.",
+    "faq_label": "Preguntas Frecuentes",
+    "faq_title": "¿Necesita aclaración?",
+    "faq1_q": "¿Cuáles son sus tiempos de respuesta para una emergencia?",
+    "faq1_a": "Intervenimos en menos de 30 minutos en Tánger para todas las emergencias vitales.",
+    "faq2_q": "¿El presupuesto es de pago o vinculante?",
+    "faq2_a": "Absolutamente no. Todos nuestros presupuestos y visitas son gratuitos, transparentes y sin compromiso.",
+    "faq3_q": "¿Qué garantías ofrecen en sus servicios?",
+    "faq3_a": "Todas nuestras instalaciones y reparaciones sanitarias están cubiertas por nuestro seguro de responsabilidad profesional.",
+    "faq4_q": "¿También trabajan con profesionales y comunidades?",
+    "faq4_a": "Sí, Plomberie Pro apoya a comunidades de propietarios, comercios, restaurantes y hoteles en Tánger."
+  },
+  "service_depannage": {
+    "title": "Reparación de Emergencia",
+    "description": "Intervención ultrarrápida en 30 minutos para fugas de agua importantes, tuberías obstruidas y averías de calentadores."
+  },
+  "service_debouchage": {
+    "title": "Desatasco & Limpieza",
+    "description": "Limpieza profunda y desatasco de tuberías con equipo profesional para un flujo perfecto."
+  },
+  "service_chauffe-eau": {
+    "title": "Servicios de Calentador",
+    "description": "Instalación, mantenimiento preventivo y reparación de calentadores de agua eléctricos y termodinámicos."
+  },
+  "service_detection": {
+    "title": "Detección & Reparación",
+    "description": "Búsqueda precisa y localización de fugas de agua invisibles para evitar costosos daños por agua."
+  },
+  "portfolio": {
+    "label": "Realizaciones",
+    "title": "Nuestros proyectos recientes"
+  },
+  "portfolio_page": {
+    "badge": "Galería de Proyectos",
+    "title": "Obras & Proyectos",
+    "title2": "Recientes Realizados",
+    "subtitle": "Cada intervención refleja nuestro compromiso con la calidad: conexiones cuidadosas y durabilidad sin concesiones en Tánger.",
+    "all": "Todos",
+    "back_to": "Volver a realizaciones",
+    "details_title": "Detalles del Proyecto",
+    "category_label": "Categoría",
+    "related": "Otras realizaciones",
+    "quote_request": "Solicitar presupuesto",
+    "voir_details": "Ver Detalles"
+  },
+  "portfolio_category": {
+    "renovation": "Renovación",
+    "neuf": "Nuevo"
+  },
+  "portfolio_projet1": {
+    "title": "Reforma de Red de Cobre a PER",
+    "category": "Renovación",
+    "description": "Reemplazo integral de tuberías antiguas por un sistema PER de alto rendimiento en Tánger.",
+    "details": "Este proyecto consistió en reemplazar toda la red de suministro de agua caliente y fría de un apartamento de 120m² en el centro de Tánger. Las tuberías de cobre originales, muy corroídas, causaban caídas de presión y microfugas. Implementamos una solución moderna en PER con colectores de distribución separados, ofreciendo control preciso habitación por habitación y mayor durabilidad.",
+    "location": "Tánger, Centro",
+    "duration": "2 días",
+    "date": "Marzo 2026",
+    "features": [
+      "Desmontaje completo de la red de cobre antigua",
+      "Red de alimentación moderna en PER con funda protectora",
+      "Instalación de colectores con válvulas de cierre individuales",
+      "Optimización de la presión hidráulica",
+      "Pruebas de presión a 6 bares durante 2 horas para garantía absoluta"
+    ]
+  },
+  "portfolio_projet2": {
+    "title": "Instalación Sanitaria Minimalista",
+    "category": "Nuevo",
+    "description": "Integración de grifería empotrada e inodoros suspendidos en una villa contemporánea en Malabata.",
+    "details": "Integración completa de instalaciones sanitarias en una nueva villa de lujo en Malabata. Las especificaciones exigían una estética ultra minimalista. Empotramos meticulosamente toda la grifería (duchas y lavabos), instalamos bastidores de inodoros suspendidos de alta gama y conectamos un sistema de filtración centralizado.",
+    "location": "Tánger, Malabata",
+    "duration": "4 días",
+    "date": "Mayo 2026",
+    "features": [
+      "Empotrado de cuerpos termostáticos de ducha Grohe",
+      "Instalación de bastidores Geberit con placas de descarga",
+      "Conexiones invisibles para plato de ducha extraplano",
+      "Sistema de filtración y descalcificador de alta gama",
+      "Acabado cuidado con conexiones invisibles bajo lavabo"
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Consejos & noticias",
+    "description": "Consejos prácticos y guías técnicas para el mantenimiento de sus instalaciones."
+  },
+  "blog_page": {
+    "badge": "Consejos de Expertos",
+    "title": "Blog & Guías",
+    "title2": "Prácticas de Fontanería",
+    "subtitle": "Encuentre guías prácticas de nuestros artesanos para mantener sus tuberías y reducir su consumo en Tánger.",
+    "featured": "DESTACADO ESTA SEMANA",
+    "featured_badge": "ARTÍCULO DESTACADO",
+    "other_articles": "OTROS ARTÍCULOS & GUÍAS",
+    "read_full": "Leer Artículo Completo",
+    "back_to": "Volver a artículos",
+    "reading_time": "Tiempo de lectura",
+    "read_article": "Leer artículo",
+    "cta_title": "¿Necesita asesoramiento personalizado?",
+    "cta_desc": "Nuestros fontaneros están disponibles para responder a todas sus preguntas o intervenir de urgencia.",
+    "cta_button": "Llamar a Plomberie Pro",
+    "related_title": "Lea también",
+    "badge_tag": "Consejos Pro"
+  },
+  "blog_article1": {
+    "title": "3 Trucos para Evitar Atascos",
+    "excerpt": "Descubra cómo mantener sus tuberías sanas a diario y evitar reflujos de agua.",
+    "date": "24 Mayo 2026",
+    "readTime": "3 min",
+    "content": [
+      "Los atascos en las tuberías son uno de los problemas de fontanería más frecuentes en los hogares de Tánger. A menudo causados por la acumulación progresiva de residuos de jabón, cabello y grasas alimentarias, se pueden evitar con simples gestos diarios.",
+      "En primer lugar, instalar una rejilla protectora o filtro en la ducha y el fregadero de la cocina es fundamental. Este sencillo dispositivo atrapa el cabello y los residuos grandes antes de que entren en el sifón, evitando la formación de obstrucciones persistentes.",
+      "En segundo lugar, adquiera el hábito de no verter grasas o aceites de cocina usados por los desagües. Al enfriarse, el aceite se solidifica formando una capa dura en las paredes de las tuberías que atrae otros residuos. Viértalos en un recipiente cerrado y tírelo a la basura.",
+      "Por último, un mantenimiento regular con agua hirviendo y bicarbonato de sodio hace maravillas. Una vez por semana, vierta una taza de bicarbonato seguida de un litro de agua hirviendo. Esta reacción natural disuelve las grasas acumuladas y neutraliza los malos olores, preservando la longevidad de sus tuberías."
+    ]
+  },
+  "blog_article2": {
+    "title": "¿Qué Calentador Ahorra Energía?",
+    "excerpt": "Comparativa técnica entre calentador tradicional e instantáneo para reducir su factura de electricidad.",
+    "date": "18 Mayo 2026",
+    "readTime": "5 min",
+    "content": [
+      "La producción de agua caliente sanitaria representa una parte significativa de la factura energética de los hogares. En Tánger, con las temperaturas más frías en invierno, elegir un sistema de calentamiento eficiente y económico es crucial para controlar el consumo.",
+      "El calentador eléctrico tradicional (acumulador) almacena agua y la mantiene a temperatura constante. Aunque ofrece excelente confort con caudal inmediato, consume energía permanentemente para mantener el agua caliente incluso cuando no está en casa. Son las llamadas pérdidas térmicas estáticas.",
+      "Por el contrario, el calentador eléctrico instantáneo solo calienta agua a demanda al abrir un grifo. Sin depósito, elimina por completo las pérdidas por almacenamiento. Sin embargo, requiere una potencia eléctrica instantánea muy elevada y puede mostrar limitaciones con uso simultáneo en varios puntos.",
+      "Para hogares que buscan maximizar el ahorro, el calentador termodinámico o solar representa la mejor alternativa moderna. El modelo termodinámico usa una mini bomba de calor para captar calor del aire y calentar agua, reduciendo el consumo eléctrico hasta un 70%. La inversión inicial se amortiza rápidamente en Tánger gracias al clima soleado."
+    ]
+  },
+  "cta": {
+    "title": "¿Necesita un fontanero ahora?",
+    "subtitle": "Respondemos en 30 minutos, 7 días a la semana.",
+    "button": "Contáctenos"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "description": "Fontanero profesional en Tánger – reparaciones urgentes, renovación de baños y calentadores de agua."
+  },
+  "contact": {
+    "page_title": "Contacto",
+    "page_description": "¿Una pregunta, un presupuesto o una emergencia? Estamos para ayudarle.",
+    "phone_title": "Teléfono",
+    "email_title": "Email",
+    "address_title": "Dirección",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_link": "Escríbanos al instante",
+    "form_title": "Envíenos un mensaje",
+    "form_description": "Complete el formulario y le responderemos por WhatsApp.",
+    "form_name": "Su nombre",
+    "form_email": "Su email",
+    "form_phone": "Su teléfono",
+    "form_message": "Su mensaje",
+    "form_submit": "Enviar por WhatsApp",
+    "form_success": "¡Mensaje enviado! Será redirigido a WhatsApp."
+  },
+  "modal": {
+    "location": "Ciudad",
+    "duration": "Duración",
+    "date": "Fecha",
+    "description": "Descripción",
+    "works": "Trabajos Realizados",
+    "cta": "¿Proyecto similar? Contáctenos"
+  }
+}

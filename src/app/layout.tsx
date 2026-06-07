@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Satisfy } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SmoothScroll from "@/components/SmoothScroll";
 import Chatbot from "@/components/Chatbot";
+import { LanguageProvider } from "@/lib/i18n";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,6 +15,12 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const satisfy = Satisfy({
+  variable: "--font-script",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -35,16 +42,18 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${satisfy.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        <SmoothScroll>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <WhatsAppButton />
-          <Chatbot />
-        </SmoothScroll>
+        <LanguageProvider>
+          <SmoothScroll>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <WhatsAppButton />
+            <Chatbot />
+          </SmoothScroll>
+        </LanguageProvider>
       </body>
     </html>
   );
