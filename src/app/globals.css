@@ -13,14 +13,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-script: var(--font-script);
+  --color-navy-dark: #0b1a30;
+  --color-navy-light: #152946;
+}
+
+.font-script {
+  font-family: var(--font-script), cursive;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  /* Remove tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -30,6 +41,8 @@ body {
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  /* Prevent horizontal overflow on all screen sizes */
+  overflow-x: hidden;
 }
 
 body,
@@ -43,6 +56,21 @@ a {
     border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Better touch targets */
+button, a {
+  touch-action: manipulation;
+}
+
+/* Fluid heading scale for mobile-first */
+h1 {
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+h2 {
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
+  line-height: 1.2;
 }
 
 /* Custom Premium Utilities */
@@ -67,46 +95,63 @@ a {
     linear-gradient(to bottom, rgba(37, 99, 235, 0.02) 1px, transparent 1px);
 }
 
-/* Custom Scrollbar for premium feel */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
-
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
 
-/* Hide scrollbar when modal open (if needed) */
+/* Lock body scroll when modal / menu open */
 .no-scroll {
   overflow: hidden;
 }
 
-/* Lenis Smooth Scroll styles */
+/* ── Lenis Smooth Scroll ──────────────────────────── */
 html.lenis, html.lenis body {
   height: auto;
 }
-
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
-
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
-
 .lenis.lenis-stopped {
   overflow: hidden;
 }
-
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* ── RTL Support (Arabic) ─────────────────────────── */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  font-family: 'Segoe UI', 'Cairo', 'Amiri', var(--font-sans), sans-serif;
+}
+
+/* In RTL, left-aligned utilities become right-aligned */
+html[dir="rtl"] .text-left  { text-align: right; }
+html[dir="rtl"] .text-right { text-align: left; }
+
+/* Flip icon directions */
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Sidebar: in RTL it comes from the right */
+html[dir="rtl"] [data-sidebar] {
+  left: auto !important;
+  right: 0 !important;
 }

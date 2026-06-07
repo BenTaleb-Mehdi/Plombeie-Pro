@@ -1,7 +1,7 @@
 {
   "company": {
-    "name": "Chakir Zarouk",
-    "phone": "+212600000000",
+    "name": "Plomberie Pro",
+    "phone": "06 00 00 00 00",
     "whatsapp": "https://wa.me/212600000000",
     "email": "contact@plomberiepro.ma",
     "address": "Tanger, Maroc"
@@ -9,7 +9,7 @@
   "navigation": [
     { "label": "Accueil", "href": "/" },
     { "label": "Services", "href": "/services" },
-    { "label": "Portfolio", "href": "/portfolio" },
+    { "label": "Réalisations", "href": "/portfolio" },
     { "label": "À Propos", "href": "/about" },
     { "label": "Blog", "href": "/blog" },
     { "label": "Contact", "href": "/contact" }
@@ -18,30 +18,34 @@
     {
       "id": "depannage-urgence",
       "title": "Dépannage d'Urgence",
-      "description": "Intervention ultra-rapide sous 30 minutes pour fuites d'eau majeures, canalisations obstruées et pannes critiques de chauffe-eau.",
+      "description": "Intervention ultra-rapide sous 30 minutes pour fuites d'eau majeures, canalisations obstruées et pannes de chauffe-eau.",
       "icon": "Wrench",
-      "whatsappMessage": "Bonjour Plomberie Pro, j'ai besoin d'un dépannage d'urgence immédiat pour une fuite/panne."
+      "whatsappMessage": "Bonjour Plomberie Pro, j'ai besoin d'un dépannage d'urgence immédiat pour une fuite/panne.",
+      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=600"
     },
     {
-      "id": "installation-sanitaire",
-      "title": "Installation Sanitaire",
-      "description": "Pose et raccordement de robinetterie, WC suspendus, cabines de douche et systèmes de filtration d'eau modernes.",
-      "icon": "Droplet",
-      "whatsappMessage": "Bonjour Plomberie Pro, je souhaite planifier une installation sanitaire à mon domicile."
-    },
-    {
-      "id": "renovation-salle-de-bain",
-      "title": "Rénovation de Salle de Bain",
-      "description": "Transformation complète de votre espace : modification des réseaux de tuyauterie, pose de receveurs de douche et raccordements design.",
+      "id": "debouchage-canalisations",
+      "title": "Débouchage & Curage",
+      "description": "Nettoyage en profondeur et débouchage de vos canalisations avec équipement professionnel pour un écoulement parfait.",
       "icon": "Layers",
-      "whatsappMessage": "Bonjour Plomberie Pro, je vous contacte pour obtenir un devis de rénovation complète de salle de bain."
+      "whatsappMessage": "Bonjour Plomberie Pro, je vous contacte pour un problème de canalisations bouchées.",
+      "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=600"
     },
     {
-      "id": "chauffage-eau",
-      "title": "Chauffe-Eau & Thermodynamique",
-      "description": "Installation, maintenance préventive et réparation de ballons d'eau chaude électriques et systèmes de chauffage thermodynamique.",
+      "id": "chauffe-eau",
+      "title": "Services Chauffe-Eau",
+      "description": "Installation, entretien préventif et dépannage de ballons d'eau chaude électriques et thermodynamiques.",
       "icon": "Flame",
-      "whatsappMessage": "Bonjour Plomberie Pro, je souhaite un rendez-vous pour l'entretien ou le remplacement d'un chauffe-eau."
+      "whatsappMessage": "Bonjour Plomberie Pro, j'aimerais planifier l'entretien ou le remplacement de mon chauffe-eau.",
+      "image": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "detection-fuites",
+      "title": "Détection & Réparation",
+      "description": "Recherche et localisation précise de fuites d'eau invisibles pour éviter les dégâts des eaux coûteux.",
+      "icon": "Droplet",
+      "whatsappMessage": "Bonjour Plomberie Pro, j'ai une suspicion de fuite d'eau chez moi.",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600"
     }
   ],
   "portfolio": [
@@ -72,7 +76,7 @@
       "id": "projet-2",
       "title": "Installation Sanitaire Minimaliste",
       "category": "Neuf",
-      "description": "Intégration de robinetterie encastrée et WC suspendus dans une villa contemporaine.",
+      "description": "Intégration de robinetterie encastrée et WC suspendus dans une villa contemporaine à Malabata.",
       "image": "/images/pro1.jpg",
       "images": [
         "/images/pro1.jpg",
@@ -96,10 +100,74 @@
     "title": "L'Artisanat de Précision",
     "description": "Basé à Tanger, Plomberie Pro combine rigueur technique et réactivité pour offrir des installations durables et des dépannages sans surprise aux particuliers et professionnels.",
     "stats": [
-      { "label": "Interventions Réussies", "value": "+1,200" },
-      { "label": "Garantie Décennale", "value": "100%" },
-      { "label": "Temps de Réponse", "value": "-30 min" }
+      { "label": "Années d'Expérience", "value": "+30" },
+      { "label": "Interventions 24/7", "value": "100%" },
+      { "label": "Plombiers Certifiés", "value": "Top" }
     ]
+  },
+  "whyChooseUs": {
+    "title": "Service honnête. Travail soigné. Prix équitables.",
+    "description": "Des interventions de plomberie rapides, professionnelles et à des tarifs transparents pour les particuliers et professionnels à Tanger.",
+    "image": "/images/plumber.png",
+    "bullets": [
+      "Professionnels agréés et assurés",
+      "Tarifs transparents sans frais cachés",
+      "Interventions propres, respectueuses & à l'heure",
+      "Garantie sur la qualité de nos travaux"
+    ]
+  },
+  "process": {
+    "title": "Des étapes simples, Zéro Stress.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Contactez-nous",
+        "description": "Appelez-nous ou envoyez un message à tout moment."
+      },
+      {
+        "number": "02",
+        "title": "Nous diagnostiquons",
+        "description": "Nous identifions le problème et expliquons vos options."
+      },
+      {
+        "number": "03",
+        "title": "Nous réparons",
+        "description": "Nous réalisons les travaux correctement du premier coup."
+      },
+      {
+        "number": "04",
+        "title": "Vous vous détendez",
+        "description": "Profitez d'une tranquillité d'esprit avec un résultat garanti."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Yasmina M.",
+      "role": "Propriétaire, Malabata",
+      "text": "Très professionnel ! Ils sont intervenus en moins de 30 minutes pour une fuite d'eau importante dans ma cuisine. Le tarif était exactement celui annoncé.",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "name": "Karim B.",
+      "role": "Gérant de café, Centre-ville",
+      "text": "Nous avons fait appel à eux pour la rénovation des sanitaires de notre établissement. Travail soigné, rapide et équipe extrêmement courtoise.",
+      "rating": 5
+    },
+    {
+      "id": "t3",
+      "name": "David L.",
+      "role": "Propriétaire, Marshan",
+      "text": "Remplacement de chauffe-eau impeccable. Devis clair, explications détaillées et chantier nettoyé après travaux. Je recommande vivement !",
+      "rating": 5
+    }
+  ],
+  "team": {
+    "title": "Expérimentée. Fiable. Locale.",
+    "description": "Nos plombiers certifiés mettent leur savoir-faire, leur rigueur et leur fierté professionnelle au service de chacun de vos projets à Tanger.",
+    "image": "/images/plumbing_team.png"
   },
   "blog": [
     {
@@ -112,7 +180,7 @@
       "content": [
         "L'engorgement des canalisations est l'un des problèmes de plomberie les plus fréquents dans les foyers à Tanger. Souvent causé par l'accumulation progressive de résidus de savon, de cheveux et de graisses alimentaires, il peut pourtant être évité grâce à quelques gestes simples au quotidien.",
         "Tout d'abord, l'installation d'une grille de protection ou d'un filtre d'évier est primordiale dans la douche et l'évier de la cuisine. Ce dispositif simple capte les cheveux et les gros débris avant qu'ils ne pénètrent dans le siphon, évitant ainsi la formation de bouchons tenaces.",
-        "Ensuite, prenez l'habitude de ne jamais verser de graisses ou d'huiles de cuisson usagées dans vos canalisations. En refroidissant, l'huile se fige et forme une couche solide sur les parois des tuyaux, ce qui retient d'autres débris. Versez-les plutôt dans un récipient fermé à jeter à la poubelle.",
+        "Ensuite, prenez l'habitue de ne jamais verser de graisses ou d'huiles de cuisson usagées dans vos canalisations. En refroidissant, l'huile se fige et forme une couche solide sur les parois des tuyaux, ce qui retient d'autres débris. Versez-les plutôt dans un récipient fermé à jeter à la poubelle.",
         "Enfin, un entretien régulier à l'eau bouillante et au bicarbonate de soude fait des miracles. Une fois par semaine, versez une tasse de bicarbonate de soude suivie d'un litre d'eau bouillante. Cette réaction naturelle dissout les graisses accumulées et neutralise les mauvaises odeurs de manière écologique, préservant la longévité de vos canalisations."
       ]
     },

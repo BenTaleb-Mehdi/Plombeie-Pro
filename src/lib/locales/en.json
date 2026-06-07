@@ -1,0 +1,210 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact",
+    "about": "About",
+    "quote": "Free Quote"
+  },
+  "hero": {
+    "badge": "Emergency Plumber in Tanger",
+    "title": "Your Expert Plumber,",
+    "title2": "Available 24/7",
+    "subtitle": "Urgent intervention in 30 minutes. Installation, renovation and plumbing maintenance in Tanger and surroundings.",
+    "cta_primary": "Get a Free Quote",
+    "cta_secondary": "Call Now",
+    "trust": "Trusted by 500+ clients"
+  },
+  "video": {
+    "title": "Craftsmanship & Excellence",
+    "subtitle": "Watch our team at work – precision, speed, and quality guaranteed.",
+    "play": "Play video",
+    "pause": "Pause video"
+  },
+  "services": {
+    "label": "Services",
+    "title": "Complete Expertise",
+    "description": "From emergency calls to full renovations, we handle all your plumbing needs."
+  },
+  "services_page": {
+    "badge": "Craftsmanship & Excellence",
+    "title": "Plumbing Services",
+    "title2": "Premium Quality",
+    "subtitle": "Skilled craftsmen at your service for rapid emergency repairs or custom sanitary renovation projects in Tangier.",
+    "grid_label": "Our Services",
+    "grid_title": "Professional solutions tailored to you",
+    "process_label": "Our Methodology",
+    "process_title": "How we work at your home",
+    "process_desc": "A transparent and secure process for stress-free repairs.",
+    "step1_title": "Contact Us",
+    "step1_desc": "Call us or send a WhatsApp. We qualify your request directly 24/7.",
+    "step2_title": "Diagnosis & Quote",
+    "step2_desc": "We come to analyze the situation and provide a precise, 100% free quote.",
+    "step3_title": "Pro Intervention",
+    "step3_desc": "Our licensed plumbers carry out the work with rigor, care and cleanliness.",
+    "step4_title": "Warranty & Follow-up",
+    "step4_desc": "We pressure-test the network and clean the premises. Your peace of mind is guaranteed.",
+    "faq_label": "Frequently Asked Questions",
+    "faq_title": "Need clarification?",
+    "faq1_q": "What are your response times for emergency repairs?",
+    "faq1_a": "We respond in less than 30 minutes in Tangier for all life-threatening emergencies.",
+    "faq2_q": "Is the quote paid or binding?",
+    "faq2_a": "Absolutely not. All our quotes and site visits are free, transparent and non-binding.",
+    "faq3_q": "What guarantees do you offer on your services?",
+    "faq3_a": "All our pipe installations and sanitary repairs are covered by our professional liability insurance.",
+    "faq4_q": "Do you also work with businesses and condominiums?",
+    "faq4_a": "Yes, Plomberie Pro supports condominium syndicates, shops, restaurants and hotels in Tangier."
+  },
+  "service_depannage": {
+    "title": "Emergency Repair",
+    "description": "Ultra-fast intervention within 30 minutes for major water leaks, clogged pipes, and water heater breakdowns."
+  },
+  "service_debouchage": {
+    "title": "Drain Cleaning & Unclogging",
+    "description": "Deep cleaning and unclogging of your pipes with professional equipment for perfect flow."
+  },
+  "service_chauffe-eau": {
+    "title": "Water Heater Services",
+    "description": "Installation, preventive maintenance and repair of electric and thermodynamic water heaters."
+  },
+  "service_detection": {
+    "title": "Leak Detection & Repair",
+    "description": "Precise search and location of invisible water leaks to prevent costly water damage."
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title": "Our Recent Projects"
+  },
+  "portfolio_page": {
+    "badge": "Project Gallery",
+    "title": "Projects & Works",
+    "title2": "Recently Completed",
+    "subtitle": "Each project reflects our commitment to quality: meticulous connections and uncompromising durability in Tangier.",
+    "all": "All",
+    "back_to": "Back to projects",
+    "details_title": "Project Details",
+    "category_label": "Category",
+    "related": "Other Projects",
+    "quote_request": "Request a Quote",
+    "voir_details": "View Details"
+  },
+  "portfolio_category": {
+    "renovation": "Renovation",
+    "neuf": "New Build"
+  },
+  "portfolio_projet1": {
+    "title": "Copper to PER Network Overhaul",
+    "category": "Renovation",
+    "description": "Complete replacement of outdated copper piping with a high-performance PER system in Tangier.",
+    "details": "This project consisted of replacing the entire hot and cold water supply network of a 120m² apartment in downtown Tangier. The original copper pipes, heavily corroded, were causing pressure drops and micro-leaks. We implemented a modern PER solution with separate distribution manifolds, offering precise room-by-room control and increased durability against wear.",
+    "location": "Tangier, City Center",
+    "duration": "2 days",
+    "date": "March 2026",
+    "features": [
+      "Complete removal of old copper network",
+      "Modern PER supply network with protective sheathing",
+      "Installation of manifolds with individual shut-off valves",
+      "Hydraulic pressure optimization",
+      "Pressure testing at 6 bars for 2 hours for absolute guarantee"
+    ]
+  },
+  "portfolio_projet2": {
+    "title": "Minimalist Sanitary Installation",
+    "category": "New Build",
+    "description": "Integration of concealed faucets and wall-hung toilets in a contemporary villa in Malabata.",
+    "details": "Complete integration of sanitary installations in a new luxury villa located in Malabata. The specifications required an ultra-minimalist aesthetic. We meticulously embedded all the faucets (showers and sinks), installed high-end wall-hung toilet frames, and connected a centralized filtration system to protect the equipment from limescale.",
+    "location": "Tangier, Malabata",
+    "duration": "4 days",
+    "date": "May 2026",
+    "features": [
+      "Embedding of Grohe thermostatic shower bodies",
+      "Installation of Geberit wall-hung toilet frames with flush plates",
+      "Invisible connections for extra-flat shower trays",
+      "High-end filtration and water softener system",
+      "Careful finishing with invisible connections under vanity tops"
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Tips & News",
+    "description": "Practical tips and technical guides for maintaining your plumbing."
+  },
+  "blog_page": {
+    "badge": "Expert Advice",
+    "title": "Blog & Guides",
+    "title2": "Plumbing Tips",
+    "subtitle": "Find practical guides from our craftsmen to maintain your pipes and reduce your consumption in Tangier.",
+    "featured": "FEATURED THIS WEEK",
+    "featured_badge": "FEATURED ARTICLE",
+    "other_articles": "OTHER ARTICLES & GUIDES",
+    "read_full": "Read Full Article",
+    "back_to": "Back to articles",
+    "reading_time": "Reading time",
+    "read_article": "Read article",
+    "cta_title": "Need personalized advice?",
+    "cta_desc": "Our plumbing craftsmen are available to answer all your questions or intervene urgently.",
+    "cta_button": "Call Plomberie Pro",
+    "related_title": "Also read",
+    "badge_tag": "Pro Tips"
+  },
+  "blog_article1": {
+    "title": "3 Tips to Prevent Clogged Drains",
+    "excerpt": "Discover how to keep your pipes healthy daily and avoid water backflow.",
+    "date": "May 24, 2026",
+    "readTime": "3 min",
+    "content": [
+      "Clogged drains are one of the most common plumbing problems in Tangier homes. Often caused by the gradual accumulation of soap residue, hair and food grease, it can be avoided with a few simple daily habits.",
+      "First, installing a drain guard or sink strainer is essential in the shower and kitchen sink. This simple device catches hair and large debris before they enter the trap, preventing stubborn clogs from forming.",
+      "Second, get into the habit of never pouring used cooking fats or oils down your drains. As they cool, oils solidify and form a hard layer on pipe walls, which traps other debris. Instead, pour them into a sealed container and throw it in the trash.",
+      "Finally, regular maintenance with boiling water and baking soda works wonders. Once a week, pour a cup of baking soda followed by a liter of boiling water. This natural reaction dissolves accumulated grease and neutralizes bad odors ecologically, preserving the longevity of your pipes."
+    ]
+  },
+  "blog_article2": {
+    "title": "Which Water Heater Saves Energy?",
+    "excerpt": "Technical comparison between traditional tank and tankless water heaters to reduce your electricity bill.",
+    "date": "May 18, 2026",
+    "readTime": "5 min",
+    "content": [
+      "Hot water production represents a significant portion of household energy bills. In Tangier, with colder winter temperatures, choosing an efficient and economical water heating system is crucial for managing electricity or gas consumption.",
+      "The conventional electric water heater (tank type) stores water and maintains its temperature continuously. While it offers excellent comfort with immediate and constant hot water flow, it consumes energy constantly to keep water hot even when you're not home. This is what's called standby heat loss.",
+      "In contrast, tankless electric water heaters only heat water on demand when a tap is opened. With no reservoir, they completely eliminate storage-related energy losses. However, they require very high instantaneous electrical power and may show limitations when multiple water points are used simultaneously in large households.",
+      "For households looking to maximize savings, heat pump water heaters or solar water heaters represent the best modern alternatives. The heat pump model uses a mini heat pump to capture calories from the air and heat water, reducing electricity consumption by up to 70%. Although the initial investment is higher, the payback in Tangier is very fast thanks to our region's sunny climate."
+    ]
+  },
+  "cta": {
+    "title": "Need a Plumber Now?",
+    "subtitle": "We respond in 30 minutes, 7 days a week.",
+    "button": "Contact Us"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "description": "Professional plumber in Tanger – emergency plumbing, bathroom renovation, and water heater installation."
+  },
+  "contact": {
+    "page_title": "Contact",
+    "page_description": "A question, a quote or an emergency? We're here to help.",
+    "phone_title": "Phone",
+    "email_title": "Email",
+    "address_title": "Address",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_link": "Message us instantly",
+    "form_title": "Send us a message",
+    "form_description": "Fill out the form below and we'll reply via WhatsApp.",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_phone": "Your phone",
+    "form_message": "Your message",
+    "form_submit": "Send via WhatsApp",
+    "form_success": "Message sent! You'll be redirected to WhatsApp."
+  },
+  "modal": {
+    "location": "City",
+    "duration": "Duration",
+    "date": "Date",
+    "description": "Description",
+    "works": "Works Completed",
+    "cta": "Similar Project? Contact Us"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "portfolio": "Réalisations",
+    "blog": "Blog",
+    "contact": "Contact",
+    "about": "À propos",
+    "quote": "Devis Gratuit"
+  },
+  "hero": {
+    "badge": "Plombier Urgence à Tanger",
+    "title": "Votre Plombier Expert,",
+    "title2": "Disponible 24h/24",
+    "subtitle": "Intervention d'urgence en 30 minutes. Installation, rénovation et entretien de plomberie à Tanger et alentours.",
+    "cta_primary": "Devis Gratuit",
+    "cta_secondary": "Appeler Maintenant",
+    "trust": "Plus de 500 clients satisfaits"
+  },
+  "video": {
+    "title": "Savoir-Faire & Excellence",
+    "subtitle": "Découvrez notre équipe en action – précision, rapidité et qualité garanties.",
+    "play": "Lire la vidéo",
+    "pause": "Pause vidéo"
+  },
+  "services": {
+    "label": "Services",
+    "title": "Un savoir-faire complet",
+    "description": "De l'urgence à la rénovation, nous intervenons sur tous vos besoins en plomberie."
+  },
+  "services_page": {
+    "badge": "Savoir-Faire & Excellence",
+    "title": "Prestations de Plomberie",
+    "title2": "Haut de Gamme",
+    "subtitle": "Des artisans qualifiés à votre écoute pour un dépannage rapide ou des projets de rénovation sanitaire sur mesure à Tanger.",
+    "grid_label": "Nos Prestations",
+    "grid_title": "Solutions professionnelles adaptées",
+    "process_label": "Notre Méthodologie",
+    "process_title": "Comment nous intervenons chez vous",
+    "process_desc": "Un processus transparent et sécurisant pour des réparations en toute sérénité.",
+    "step1_title": "Prise de contact",
+    "step1_desc": "Appelez-nous ou envoyez un WhatsApp. Nous qualifions votre demande en direct 24h/24 et 7j/7.",
+    "step2_title": "Diagnostic & Devis",
+    "step2_desc": "Nous nous déplaçons pour analyser la situation et vous remettons un devis précis et 100% gratuit.",
+    "step3_title": "Intervention Pro",
+    "step3_desc": "Nos plombiers agréés exécutent les travaux avec rigueur, soin et propreté sous vos yeux.",
+    "step4_title": "Garantie & Suivi",
+    "step4_desc": "Nous testons le réseau à haute pression et nettoyons les lieux. Votre tranquillité est garantie.",
+    "faq_label": "Questions Fréquentes",
+    "faq_title": "Besoin de clarification ?",
+    "faq1_q": "Quels sont vos délais d'intervention pour un dépannage d'urgence ?",
+    "faq1_a": "Nous intervenons en moins de 30 minutes à Tanger pour toutes les urgences vitales (inondations, ruptures de canalisations, pannes complètes de chauffe-eau ou de pompe).",
+    "faq2_q": "Le devis est-il payant ou avec engagement ?",
+    "faq2_a": "Absolument pas. Tous nos devis et déplacements pour étude de projet sont gratuits, transparents et sans aucun engagement de votre part. Le tarif indiqué est fixe.",
+    "faq3_q": "Quelles garanties offrez-vous sur vos prestations ?",
+    "faq3_a": "Toutes nos installations de tuyauterie et réparations sanitaires sont couvertes par notre assurance responsabilité civile et décennale professionnelle.",
+    "faq4_q": "Intervenez-vous également pour les professionnels et copropriétés ?",
+    "faq4_a": "Oui, Plomberie Pro accompagne les syndics de copropriété, les commerces, les restaurants et les hôtels à Tanger."
+  },
+  "service_depannage": {
+    "title": "Dépannage d'Urgence",
+    "description": "Intervention ultra-rapide sous 30 minutes pour fuites d'eau majeures, canalisations obstruées et pannes de chauffe-eau."
+  },
+  "service_debouchage": {
+    "title": "Débouchage & Curage",
+    "description": "Nettoyage en profondeur et débouchage de vos canalisations avec équipement professionnel pour un écoulement parfait."
+  },
+  "service_chauffe-eau": {
+    "title": "Services Chauffe-Eau",
+    "description": "Installation, entretien préventif et dépannage de ballons d'eau chaude électriques et thermodynamiques."
+  },
+  "service_detection": {
+    "title": "Détection & Réparation",
+    "description": "Recherche et localisation précise de fuites d'eau invisibles pour éviter les dégâts des eaux coûteux."
+  },
+  "portfolio": {
+    "label": "Réalisations",
+    "title": "Nos projets récents"
+  },
+  "portfolio_page": {
+    "badge": "Galerie de Réalisations",
+    "title": "Chantiers & Projets",
+    "title2": "Récents Réalisés",
+    "subtitle": "Chaque intervention est le reflet de notre engagement de qualité : des raccordements soignés et une durabilité sans compromis à Tanger.",
+    "all": "Tous",
+    "back_to": "Retour aux réalisations",
+    "details_title": "Détails du projet",
+    "category_label": "Catégorie",
+    "related": "Autres réalisations",
+    "quote_request": "Demander un devis",
+    "voir_details": "Voir Détails"
+  },
+  "portfolio_category": {
+    "renovation": "Rénovation",
+    "neuf": "Neuf"
+  },
+  "portfolio_projet1": {
+    "title": "Refonte de Réseau Cuivre en PER",
+    "category": "Rénovation",
+    "description": "Remplacement intégral d'une tuyauterie vétuste par un système PER haute performance à Tanger.",
+    "details": "Ce projet consistait à remplacer l'intégralité du réseau d'alimentation en eau chaude et froide d'un appartement de 120m² dans le centre de Tanger. Les tuyaux en cuivre d'origine, fortement corrodés, provoquaient des baisses de pression et des micro-fuites. Nous avons mis en place une solution moderne en PER avec des collecteurs de distribution séparés, offrant un contrôle précis pièce par pièce et une durabilité accrue face à l'usure.",
+    "location": "Tanger, Centre-ville",
+    "duration": "2 jours",
+    "date": "Mars 2026",
+    "features": [
+      "Dépose complète du réseau cuivre vétuste",
+      "Réseau d'alimentation moderne en PER avec gaine protectrice",
+      "Installation de collecteurs avec vannes d'arrêt individuelles",
+      "Optimisation de la pression hydraulique",
+      "Tests de mise en pression à 6 bars pendant 2 heures pour garantie absolue"
+    ]
+  },
+  "portfolio_projet2": {
+    "title": "Installation Sanitaire Minimaliste",
+    "category": "Neuf",
+    "description": "Intégration de robinetterie encastrée et WC suspendus dans une villa contemporaine à Malabata.",
+    "details": "Intégration complète des installations sanitaires dans une villa neuve haut de gamme située à Malabata. Le cahier des charges exigeait une esthétique ultra-minimaliste. Nous avons procédé à l'encastrement minutieux de l'ensemble de la robinetterie (douches et lavabos), installé des bâtis-supports de WC suspendus de grande marque, et raccordé un système de filtration centralisé pour préserver les équipements du calcaire.",
+    "location": "Tanger, Malabata",
+    "duration": "4 jours",
+    "date": "Mai 2026",
+    "features": [
+      "Encastrement de corps thermostatiques de douches Grohe",
+      "Installation de bâtis-supports WC Geberit avec plaques de déclenchement affleurantes",
+      "Raccordements invisibles pour receveur de douche extra-plat",
+      "Centrale de filtration et adoucisseur d'eau haut de gamme",
+      "Finition soignée avec raccordements invisibles sous plan vasque"
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Conseils & actualités",
+    "description": "Astuces pratiques et guides techniques pour l'entretien de vos installations."
+  },
+  "blog_page": {
+    "badge": "Conseils de Spécialistes",
+    "title": "Blog & Guides",
+    "title2": "Pratiques de Plomberie",
+    "subtitle": "Retrouvez les guides pratiques de nos artisans pour entretenir vos canalisations et réduire vos consommations à Tanger.",
+    "featured": "À LA UNE DE CETTE SEMAINE",
+    "featured_badge": "ARTICLE VEDETTE",
+    "other_articles": "AUTRES ARTICLES & GUIDES",
+    "read_full": "Lire l'article complet",
+    "back_to": "Retour aux articles",
+    "reading_time": "Temps de lecture",
+    "read_article": "Lire l'article",
+    "cta_title": "Besoin d'un conseil personnalisé ?",
+    "cta_desc": "Nos artisans plombiers sont disponibles pour répondre à toutes vos questions ou intervenir d'urgence.",
+    "cta_button": "Appeler Plomberie Pro",
+    "related_title": "À lire également",
+    "badge_tag": "Conseils Pro"
+  },
+  "blog_article1": {
+    "title": "3 Gestes pour Éviter l'Engorgement",
+    "excerpt": "Découvrez comment maintenir vos canalisations saines au quotidien et éviter les refoulements d'eau.",
+    "date": "24 Mai 2026",
+    "readTime": "3 min",
+    "content": [
+      "L'engorgement des canalisations est l'un des problèmes de plomberie les plus fréquents dans les foyers à Tanger. Souvent causé par l'accumulation progressive de résidus de savon, de cheveux et de graisses alimentaires, il peut pourtant être évité grâce à quelques gestes simples au quotidien.",
+      "Tout d'abord, l'installation d'une grille de protection ou d'un filtre d'évier est primordiale dans la douche et l'évier de la cuisine. Ce dispositif simple capte les cheveux et les gros débris avant qu'ils ne pénètrent dans le siphon, évitant ainsi la formation de bouchons tenaces.",
+      "Ensuite, prenez l'habitude de ne jamais verser de graisses ou d'huiles de cuisson usagées dans vos canalisations. En refroidissant, l'huile se fige et forme une couche solide sur les parois des tuyaux, ce qui retient d'autres débris. Versez-les plutôt dans un récipient fermé à jeter à la poubelle.",
+      "Enfin, un entretien régulier à l'eau bouillante et au bicarbonate de soude fait des miracles. Une fois par semaine, versez une tasse de bicarbonate de soude suivie d'un litre d'eau bouillante. Cette réaction naturelle dissout les graisses accumulées et neutralise les mauvaises odeurs de manière écologique, préservant la longévité de vos canalisations."
+    ]
+  },
+  "blog_article2": {
+    "title": "Quel Chauffe-Eau pour Économiser l'Énergie ?",
+    "excerpt": "Comparatif technique entre ballon classique et chauffe-eau instantané pour réduire votre facture d'électricité.",
+    "date": "18 Mai 2026",
+    "readTime": "5 min",
+    "content": [
+      "La production d'eau chaude sanitaire représente une part significative de la facture énergétique des ménages. À Tanger, avec la baisse des températures en hiver, le choix d'un système de chauffe-eau performant et économe est crucial pour maîtriser sa consommation d'électricité ou de gaz.",
+      "Le chauffe-eau électrique classique (ou cumulus) stocke l'eau et la maintient à température en continu. S'il offre un excellent confort d'utilisation avec un débit d'eau chaude immédiat et constant, il consomme de l'énergie en permanence pour maintenir l'eau chaude, même lorsque vous n'êtes pas chez vous. C'est ce qu'on appelle les pertes thermiques statiques.",
+      "À l'inverse, le chauffe-eau électrique instantané ne chauffe l'eau qu'à la demande, lorsqu'un robinet est ouvert. Sans réservoir, il élimine complètement les pertes d'énergie liées au stockage. Cependant, il nécessite une puissance électrique instantanée très élevée et peut montrer ses limites lors de l'utilisation simultanée de plusieurs points d'eau dans les grands foyers.",
+      "Pour les foyers soucieux de réaliser des économies maximales, le chauffe-eau thermodynamique ou le chauffe-eau solaire représentent les meilleures alternatives modernes. Le modèle thermodynamique utilise une mini pompe à chaleur pour capter les calories de l'air et chauffer l'eau, réduisant la consommation électrique jusqu'à 70%. Bien que l'investissement initial soit plus élevé, le retour sur investissement à Tanger est très rapide grâce au climat ensoleillé de notre région."
+    ]
+  },
+  "cta": {
+    "title": "Besoin d'un plombier maintenant ?",
+    "subtitle": "Nous intervenons en 30 minutes, 7 jours sur 7.",
+    "button": "Contactez-nous"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "description": "Plombier professionnel à Tanger – dépannage urgent, rénovation salle de bain et chauffe-eau."
+  },
+  "contact": {
+    "page_title": "Contact",
+    "page_description": "Une question, un devis ou une urgence ? Nous sommes à votre écoute.",
+    "phone_title": "Téléphone",
+    "email_title": "Email",
+    "address_title": "Adresse",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_link": "Nous écrire instantanément",
+    "form_title": "Envoyez-nous un message",
+    "form_description": "Remplissez le formulaire ci-dessous et nous vous répondrons via WhatsApp.",
+    "form_name": "Votre nom",
+    "form_email": "Votre email",
+    "form_phone": "Votre téléphone",
+    "form_message": "Votre message",
+    "form_submit": "Envoyer via WhatsApp",
+    "form_success": "Message envoyé ! Vous allez être redirigé vers WhatsApp."
+  },
+  "modal": {
+    "location": "Ville",
+    "duration": "Durée",
+    "date": "Date",
+    "description": "Description",
+    "works": "Travaux Réalisés",
+    "cta": "Projet similaire ? Contactez-nous"
+  }
+}
